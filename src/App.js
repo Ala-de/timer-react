@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Time from './bg'
+import './App.css'
+ 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+ class App extends React.Component{
+  constructor(){
+    super()
+    this.state={text:''}
+
+  }
+
+  handlechange(event){
+    var tt = event.target.value
+    console.log(tt)
+    this.setState({text:tt})
+  }
+ 
+  render(){
+    return <div>
+      
+      <form  class ="inputt"onSubmit={this.handlechange.bind(this)}>
+        <input onChange={this.handlechange.bind(this)} value={this.state.text}/>
+        <button>Submit</button>
+      </form>
+      <div className="date">
+      <h3 className='val'><u>heure: </u>{Math.floor(this.state.text/3600)}</h3>
+      <h3 className='val'><u> minute </u>{Math.floor(this.state.text%3600/60)}</h3>
+      <h3 className='val'><u> seconde:</u> {this.state.text%60}</h3>
+      </div>
+   <Time/>
+   
     </div>
-  );
+  }
 }
-
-export default App;
+export default App

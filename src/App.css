@@ -1,7 +1,75 @@
+body{
+  background-image: url('https://cutewallpaper.org/21/time-wallpaper/Free-photo-Wallpaper-Background-Time-Of-Pointer-Yellow-Clock-.jpg');
+
+ background-repeat: no-repeat;
+ 
+ background-size: cover;
+
+
+}
+.inputt{
+  margin-left: 50rem;
+ 
+  margin-top: 10rem;
+}
+
+
+.val{
+  
+ 
+  margin-top: 120px;
+}
+.date{
+  display: flex;
+  justify-content: space-between;
+  background-color: #282c344d;
+  width: 30rem;
+  padding: 3rem;
+  margin-left: 40rem;
+  margin-top: -8rem;
+  border-radius: 12px;
+}
+.date1{
+  display: flex;
+  justify-content: space-between;
+  background-color: #282c344d;
+  width: 30rem;
+  padding: 3rem;
+  margin-left: 40rem;
+  margin-top:50px;
+  border-radius: 12px;
+}
+.btt{margin: 8px;}
+
+.time-container {
+  text-align: center;
+}
+.time-inner-container {
+  display: inline-block;
+}
+.time-digits {
+  font-size: 4em;
+}
+.time-text {
+  display: flex;
+  justify-content: space-around;
+}
+.time-text-item{
+  display: flex;
+  justify-content: space-around;
+}
 .App {
   text-align: center;
 }
-
+.form-control{padding: 4px 4px;
+  border-width: 5px;
+margin-bottom: -25px;
+margin-right: -500px;
+margin-bottom: -250px;
+}
+.imgpart2{width: 50%;
+         float: left;
+        }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
